@@ -19,11 +19,22 @@ This PowerShell script binds an **existing internal PKI-issued SSL certificate**
 
 ## ✅ Prerequisites
 
-- Windows 11 (temporary test/demo host) 
 - PowerShell (Administrator)
 - Certificate already installed from an internal PKI into `LocalMachine > Personal`
 - DNS name (CN or SAN) must match the name used in the certificate
 - Port 443 must be open in Windows Firewall
+
+## 🗂️ Script Selection
+
+Use the appropriate script based on your environment:
+
+- 🖥️ **Windows 11 (temporary test/demo host)**  
+  Use this script:  
+  [`tosca-server-install-cert-https.ps1`](https://github.com/fillegar/tosca-server-cert-install/blob/main/tosca-server-install-cert-https.ps1)
+
+- 🏢 **Windows Server (PoV setup)**  
+  Use this script:  
+  [`tosca-server-windows-server-cert-install.ps1`](https://github.com/fillegar/tosca-server-cert-install/blob/main/tosca-server-windows-server-cert-install.ps1)
 
 ---
 
